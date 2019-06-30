@@ -11,21 +11,43 @@
 </head>
 <body>
 <header>
-    <div class="page-header container-fluid">
-        <h1>Psychic Game</h1>
-    </div>
+   <div class="jumbotron">
+       <h1 class="display-3">Psychic Game</h1>
+   </div>
 </header>
 <div class="container">
-    <h2>Guess what letter I am thinking of</h2>
+    <h2 class="badge badge-dark text-wrap" style="width: 20rem; font-size: 20px;">Guess what letter I am thinking of</h2>
+    
+
+    
    <div class="row">
-       <div class="col-md-4">
-           <ul id="space" class="list-group">
-               <li class="list-group-itemlist-group-item-action list-group-item-success" id="wins">Wins: </li>
-               <li class="list-group-itemlist-group-item-action list-group-item-danger" id="lose">Losses: </li>
-               <li class="list-group-itemlist-group-item-action list-group-item-primary" id="guessesLeft"> Guesses Left: </li>
-               <li class="list-group-itemlist-group-item-action list-group-item-warning" id="letter">Guesses so far: </li>
-           </ul>
-       </div>
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-body">
+                <h3 class="card-title" id="wins">Wins: </h3>
+            </div>
+        </div>
+   </div>
+   <div class="row">
+        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                <div class="card-body">
+                    <h3 class="card-title" id="lose">Losses: </h3>
+                </div>
+        </div>
+    </div>
+    <div class="row">
+            <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h3 class="card-title" id="guessesLeft">Guesses Left: </h3>
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                        <div class="card-body">
+                            <h3 class="card-title" id="letter">Guesses so far: </h3>
+                        </div>
+                </div>
+            </div>
    </div> 
 </div>
 
