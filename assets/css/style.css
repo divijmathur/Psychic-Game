@@ -7,10 +7,11 @@ html {
   body {
       font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
       font-size: 16px;
+
   }
 
   header {
-      background-color:#673ab7;
+
   }
 
   #wins, #lose, #guessesLeft, #letter {
@@ -25,10 +26,11 @@ html {
       text-align: left;
   }
 
-  .containter {
+  .container {
       width: 100%;
       max-width: 950px;
       margin: 0 auto;
+      text-align: center;
   }
   
   #space {
@@ -45,6 +47,12 @@ html {
       font-size: 30px;
       color: #4A5BD2;
         padding: 1rem;
+  }
+
+  #hint {
+    width: 20rem; 
+    font-size: 20px;
+    text-align: center;
   }
   
   /*MEDIA QUERIES*/
