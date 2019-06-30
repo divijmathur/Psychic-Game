@@ -28,7 +28,7 @@ var restart = function() {
 document.onkeyup = function(event) {
 	guessesLeft--;
 
-	var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+	var userGuess = event.key;
 
 	letterUser.push(userGuess);
 	countGuessesLeft();
@@ -37,11 +37,10 @@ document.onkeyup = function(event) {
 	if (userGuess === computerGuess){
 		wins++;
 		document.querySelector("#wins").innerHTML = "Wins: " + wins;
-		restart();
+        restart();
 	} 
 	else if (guessesLeft === 0) {
 		losses++;
 		document.querySelector("#lose").innerHTML = "Loses: " + losses;
-		restart();
-	}
-  };
+        restart();	}
+  }
